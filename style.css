@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Comforter+Brush&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=PT+Serif+Caption:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    font-family: 'PT Serif Caption', sans-serif;   background-color: black;} html {scroll-behavior:smooth}
+h1, h2, h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: 700;
+    letter-spacing: 1px;}
+.title {
+     flex: 0 0 33.33vw; 
+    display: flex;
+    justify-content: center; 
+   
+    text-align: center;
+   color: #fff;
+   
+}
+.left_text {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    height: 100%;
+    text-align: center;
+   
+}
+header {
+    display: flex;
+  
+    
+    
+}
+.bigimage {
+    display: block;
+    margin: auto;         
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-image: url(./Nesebar\,\ Bulgaria.jfif);
+    border-radius: 5px;   
+}
+
+    /* Main menu of the site beginning */
+ul{
+    padding-left: 0px;
+    list-style-type: none;}
+a {
+    display: block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;}
+a:hover {
+    background-color: #fff;
+    color: #1a1a1a; 
+    transform: translateY(-2px)} .left {margin-top: 0px;}
+.high, .medium, .low {
+    justify-content: center;
+    width: 100%;
+    gap: 22px;
+    display: block;
+    text-align: center;}
+.high a{flex: 1 0;}
+.medium a {flex: 1 0;}
+.low a {flex: 1 0;}
+@media (min-width: 639px) {
+.title {margin-top: 32px;} .left {margin-top: 20px;}
+header, .left_text{display: block; margin-top: 0.67em;}
+.high, .medium, .low {
+display: flex;}}
+@media (min-width: 768px) {
+    .bigimage {
+    background-image: url(./mainIMG768.jpg);}
+    .high, .medium {
+        display: flex;
+        text-align: left;}
+    .low {
+        display: block;
+        text-align: left;}}
+@media (min-width: 1024px) {
+   .menu {   
+        display: flex; 
+        flex-direction: row;
+        gap: 5px;}
+    .high, .medium {
+        display: block;}}
+@media (min-width: 1280px) {
+    .bigimage {
+    background-image: url(./mainIMG1280.jpg);
+    height: 60vh;}
+    .high, .medium, .low {
+        display: flex;
+        gap: 3px;}  
+    .menu {
+        gap: 3px;}
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;}}
+@media (min-width: 1440px) {
+    .high, .medium, .low {
+        gap: 0px;}  
+    .menu {
+        gap: 0px;}
+    a {
+        border-radius: 0px;
+        white-space: nowrap;}
+    .high, .medium, .low {
+        width: 450px;}
+    .bigimage {
+        max-width: 1600px;
+        background-image: url(./mainIMG1440.jpg);
+        height: 70vh;  
+    }
+    .left {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;}
+    .rigth {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;}
+    .menu {      
+        align-items: center; 
+        justify-content: center;}}
+        /* Main menu of the site END */
+.maintext h2, p {
+    color: #fff;
+}
+h2 {
+    text-align: center;
+}
+.sec1, .sec2, .sec3 {
+    transition: all 0.3s;
+    display: block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: 2px solid #fff;    
+}
+.sec1:hover, .sec2:hover, .sec3:hover {
+    transform: translateY(-5px);
+}
+.sec2_2 {
+    border-left: solid 12px orange;   
+    border-radius: 10px;
+    border-right: solid 12px orange;   
+}
+.sec2_2 ul {
+    padding-left: 10px;  
+    border-left: solid 12px #f3c66b; 
+    border-right: solid 12px #f3c66b;
+}
+.start {
+    text-align: center;
+}
+.start:hover {   
+    background-color: #fff;
+    color: #1a1a1a; 
+    transform: translateY(0px)} 
+    
+
